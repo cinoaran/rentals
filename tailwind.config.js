@@ -7,12 +7,34 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        topToBottom: {
+          '0%': {
+            transform: 'translateY(0%)',
+            opacity: '0.3'
+          },
+          '100%': {
+            transform: ' translateY(100%)',
+            opacity: '0'
+          }
+        },
+        bottomToTop: {
+          '100%': {
+            transform: ' translateY(-100%)',
+            opacity: '0'
+          },
+          '0%': {
+            transform: 'translateY(0%)',
+            opacity: '0.3'
+          }
+        }
       },
-    },
+      animation: {
+        topToBottom: 'topToBottom 3.5s ease-in-out infinite',
+        bottomToTop: 'bottomToTop 3.5s ease-in-out infinite',
+      }
+    }
   },
-  plugins: [],
+  plugins: []
+
 };

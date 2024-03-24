@@ -1,0 +1,76 @@
+ <header className='md:w-5/6 w-full mx-auto mb-5 bg-[url("/navImages/black-building.png")] bg-no-repeat bg-right-top :bg-[length:50%_100%] bg-black opacity-90'>
+      <nav className='relative flex flex-row items-center justify-between p-5 w-full h-[120px]'>
+        <h2 className='absolute text-3xl text-white'>Logo</h2>
+        <ul className='absolute right-10 flex flex-row items-center gap-10 text-white'>
+          <li>Properties</li>
+          <li>Map Search</li>
+          <li>Blog</li>
+          <li>Login | Register</li>
+        </ul>
+      </nav>
+      <div className='flex items-center justify-center gap-20 bg-green-200 h-[400px] pt-10 text-white opacity-90'>
+        <div className='flex flex-wrap items-center justify-evenly  h-full w-full'>
+          <div className='flex items-center justify-start  text-blue-900 '>
+            <div className='flex flex-col items-center justify-center'>
+              <span>
+                <FaUsers size='3.0em' />
+              </span>
+              <h3 className='flex items-center justify-center flex-wrap'>
+                <span className='text-center max-w-[120px]'>1000+ Users</span>
+              </h3>
+            </div>
+          </div>
+          <div className='flex items-center justify-center text-blue-900'>
+            <div className='flex flex-col items-center justify-center'>
+              <span>
+                <FaHotel size='3.0em' />
+              </span>
+              <h3 className='flex items-center justify-center flex-wrap'>
+                <span className='text-center max-w-[140px]'>
+                  7000+ Properties
+                </span>
+              </h3>
+            </div>
+          </div>
+
+          <div className='flex flex-col items-center justify-center text-blue-900'>
+            <span>
+              <FaMapMarkerAlt size='3.0em' />
+            </span>
+            <h3 className='flex items-center justify-center flex-wrap'>
+              <span className='text-center max-w-[120px]'>Map search!</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div className='flex items-center justify-between gap-20 bg-blue-900 md:h-[350px] h-[350px] text-white opacity-95 md:opacity-75'>
+        <div className='relative flex items-start justify-center md:w-[300px] md:h-[350px] w-[290px] h-[350px]'>
+          <div>
+            <Image
+              src='/navImages/pageLeft.png'
+              alt='pageLeft'
+              fill={true}
+              objectFit='cover'
+            />
+          </div>
+          <div>
+            <h1 className='flex flex-col flex-nowrap items-end justify-center gap-5 text-5xl  text-white ml-[350px] pt-5 md:w-[350px] w-[260px] bg-slate-400'>
+              <span className='flex flex-end word-break-nowrap text-right'>
+                Start your
+              </span>
+              <span className='flex flex-end word-break-nowrap text-right'>
+                Journey
+              </span>
+              <span className='flex flex-end word-break-nowrap text-right'>
+                today!
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div className='relative w-full h-[90%]'>
+          <button className='absolute right-10 bottom-5  bg-red-500   text-3xl  px-5 py-3 rounded-md md:w-[300px] w-[300px] h-20'>
+            Search now
+          </button>
+        </div>
+      </div>
+    </header>
