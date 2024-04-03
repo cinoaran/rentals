@@ -13,14 +13,15 @@ const TopNavComponent = () => {
   const pathname = usePathname();
 
   return (
-    <header className='relative w-full h-[max-content] bg-blue-600/70 '>
-      <Image
-        src="/navImages/sony-center.png"
-        layout="fill"
-
-        className="absolute md:max-w-[70%] max-w-[100%] max-h-full object-cover aspect-video opacity-20 mr-0 ml-auto"
-        style={{ clipPath: "circle(75% at 90% 30%)" }}
-        alt="hero" />
+    <header className='relative bg-blue-600/70'>
+      <div className="absolute w-[100%] lg:w-[80%] h-[100%] opacity-20 right-0 top-0 ">
+        <Image
+          src="/navImages/sony-center.png"
+          fill
+          style={{ clipPath: "circle(80% at 100% 50%)", objectFit: "cover" }}
+          alt="hero"
+          priority
+        /></div>
       <nav className="flex flex-row items-center justify-between p-5 w-full h-[110px]">
         <div className="relative text-white cursor-pointer">
           <Link href="/" className="flex flex-row items-center justify-center gap-3">

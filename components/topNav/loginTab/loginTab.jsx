@@ -17,7 +17,7 @@ const LoginTab = () => {
   return (
     <>
       {!isLoggedIn ? (
-        <div className='relative flex items-center justify-center md:gap-5 gap-2'>
+        <div className='relative flex items-center justify-center md:gap-5 gap-2 z-50 overflow-visible'>
 
           <Link href='/login'>
             <Tooltip
