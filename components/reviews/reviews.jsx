@@ -44,7 +44,7 @@ const Reviews = () => {
                         <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                             <p className="text-sm leading-6 text-slate-200">Business Relations</p>
                             <div className="mt-1 flex items-center gap-x-1.5">
-                                <div className="flex-none rounded-full bg-emerald-500/20 p-1">
+                                <div className="flex-none rounded-full bg-blue-950 p-1">
                                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                                 </div>
                                 <p className="text-xs leading-5 text-white">Online</p>
@@ -62,7 +62,7 @@ const Reviews = () => {
                         <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                             <p className="text-sm leading-6 text-slate-200">Business Relations</p>
                             <div className="mt-1 flex items-center gap-x-1.5">
-                                <div className="flex-none rounded-full bg-emerald-500/20 p-1">
+                                <div className="flex-none rounded-full bg-blue-950 p-1">
                                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500"></div>
                                 </div>
                                 <p className="text-xs leading-5 text-white">Online</p>
