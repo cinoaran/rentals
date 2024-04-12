@@ -7,7 +7,7 @@ import { FaRegBuilding } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className='bg-blue-900 mx-auto mt-5'>
+    <footer className='bg-blue-900 mx-auto'>
 
       <div className="flex flex-col md:flex-row flex-wrap md:justify-between  p-5 gap-5">
         <div className="flex flex-col md:flex-row flex-wrap items-center md:items-start justify-between gap-10 w-full md:divide-none divide-y divide-dashed p-10">

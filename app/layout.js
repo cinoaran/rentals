@@ -31,12 +31,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={inter.className}>
         <div className="md:w-5/6 w-full mx-auto mb-0 ">
           <TopNavComponent />
         </div>
-        <main className="md:w-5/6 w-full mx-auto mb-0 ">{children}</main>
+        <main className="md:w-5/6 sm:w-full mx-auto mb-0">{children}</main>
         <div className="md:w-5/6 w-full mx-auto mb-0 ">
           <Footer />
         </div>
