@@ -4,6 +4,8 @@
     "owner": "1",
     "name": "Boston Commons Retreat",
     "type": "Apartment",
+    "is_listed": true,
+    "is_featured": true,
     "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
     "location": {
       "street": "120 Tremont Street",
@@ -41,7 +43,7 @@
       "phone": "617-555-5555"
     },
     "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
-    "is_featured": false,
+
     "createdAt": "2024-01-01T00:00:00.000Z",
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
@@ -50,6 +52,8 @@
     "owner": "1",
     "name": "Cozy Downtown Loft",
     "type": "Apartment",
+    "is_listed": true,
+    "is_featured": true,
     "description": "A cozy downtown loft with great city views.",
     "location": {
       "street": "45 Main Street",
@@ -86,7 +90,6 @@
       "phone": "212-555-5555"
     },
     "images": ["b1.jpg", "b2.jpg", "b3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-02T00:00:00.000Z",
     "updatedAt": "2024-01-02T00:00:00.000Z"
   },
@@ -95,6 +98,8 @@
     "owner": "2",
     "name": "Luxury Condo with a View to a seaside pool. Next to the city center",
     "type": "Condo",
+    "is_listed": true,
+    "is_featured": true,
     "description": "Experience luxury in this stunning condo with breathtaking views.",
     "location": {
       "street": "500 Lux Lane",
@@ -133,7 +138,6 @@
       "phone": "213-555-5555"
     },
     "images": ["c1.jpg", "c2.jpg", "c3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-03T00:00:00.000Z",
     "updatedAt": "2024-01-03T00:00:00.000Z"
   },
@@ -142,6 +146,8 @@
     "owner": "2",
     "name": "Charming Cottage Getaway",
     "type": "Cottage Or Cabin",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Escape to this charming cottage for a peaceful retreat.",
     "location": {
       "street": "123 Countryside Lane",
@@ -168,7 +174,6 @@
       "phone": "512-555-5555"
     },
     "images": ["d1.jpg", "d2.jpg", "d3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-04T00:00:00.000Z",
     "updatedAt": "2024-01-04T00:00:00.000Z"
   },
@@ -177,6 +182,8 @@
     "owner": "3",
     "name": "Modern Downtown Studio",
     "type": "Studio",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Stay in style in this modern downtown studio apartment.",
     "location": {
       "street": "75 Urban Avenue",
@@ -205,7 +212,6 @@
       "phone": "312-555-5555"
     },
     "images": ["e1.jpg", "e2.jpg", "e3.jpg"],
-    "is_featured": true,
     "createdAt": "2024-01-05T00:00:00.000Z",
     "updatedAt": "2024-01-05T00:00:00.000Z"
   },
@@ -214,6 +220,8 @@
     "owner": "3",
     "name": "Seaside Retreat",
     "type": "House",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Escape to this seaside house for a relaxing getaway.",
     "location": {
       "street": "456 Oceanfront Drive",
@@ -242,7 +250,6 @@
       "phone": "305-555-5555"
     },
     "images": ["f1.jpg", "f2.jpg", "f3.jpg"],
-    "is_featured": true,
     "createdAt": "2024-01-06T00:00:00.000Z",
     "updatedAt": "2024-01-06T00:00:00.000Z"
   },
@@ -251,6 +258,8 @@
     "owner": "4",
     "name": "Rustic Cabin in the Woods",
     "type": "Cottage Or Cabin",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Experience nature in this cozy rustic cabin.",
     "location": {
       "street": "789 Forest Lane",
@@ -278,7 +287,6 @@
       "phone": "303-555-5555"
     },
     "images": ["g1.jpg", "g2.jpg", "g3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-07T00:00:00.000Z",
     "updatedAt": "2024-01-07T00:00:00.000Z"
   },
@@ -287,6 +295,8 @@
     "owner": "5",
     "name": "Ski-In/Ski-Out Chalet",
     "type": "Chalet",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Hit the slopes from this cozy ski-in/ski-out chalet.",
     "location": {
       "street": "321 Mountain Road",
@@ -314,7 +324,6 @@
       "phone": "970-555-5555"
     },
     "images": ["h1.jpg", "h2.jpg", "h3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-08T00:00:00.000Z",
     "updatedAt": "2024-01-08T00:00:00.000Z"
   },
@@ -323,6 +332,8 @@
     "owner": "6",
     "name": "Mountain View Retreat",
     "type": "House",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Enjoy stunning mountain views from this spacious retreat.",
     "location": {
       "street": "600 Summit Drive",
@@ -351,7 +362,6 @@
       "phone": "303-555-5555"
     },
     "images": ["i1.jpg", "i2.jpg", "i3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-09T00:00:00.000Z",
     "updatedAt": "2024-01-09T00:00:00.000Z"
   },
@@ -360,6 +370,8 @@
     "owner": "7",
     "name": "Historic Downtown Loft",
     "type": "Apartment",
+    "is_listed": false,
+    "is_featured": false,
     "description": "Step back in time with a stay in this historic downtown loft.",
     "location": {
       "street": "123 History Lane",
@@ -387,7 +399,6 @@
       "phone": "215-555-5555"
     },
     "images": ["j1.jpg", "j2.jpg", "j3.jpg"],
-    "is_featured": false,
     "createdAt": "2024-01-10T00:00:00.000Z",
     "updatedAt": "2024-01-10T00:00:00.000Z"
   }

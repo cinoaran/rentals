@@ -21,18 +21,15 @@ const TopNavComponent = () => {
           style={{ clipPath: "circle(80% at 100% 50%)", objectFit: "cover" }}
           alt="hero"
           priority
-        /></div>
-      <nav className="flex flex-row items-center justify-between p-5 w-full h-[110px]">
+        />
+      </div>
+      <nav className="flex flex-row items-center justify-between p-5 w-full ">
         <div className="relative text-white cursor-pointer">
-          <Link href="/" className="flex flex-row items-center justify-center gap-3">
-            <IoBedOutline size="3.8em" className="text-blue-900" />
-            <div className="flex flex-col items-center justify-center">
-              <h1 className="text-[20px] ">ARAN RENTALS</h1>
-              <hr className="w-[40px] text-white" />
-              <span className="text-[18px] font-bold tracking-[.10em]">
-                World <b className="text-blue-900">&</b> Living
-              </span>
-            </div>
+          <Link href="/" className="flex flex-col items-center justify-center">
+            <IoBedOutline className="text-blue-900 text-5xl md:text-8xl " />
+            <span className="text-sm font-bold uppercase">
+              Travel <b className="text-blue-900">&</b> Living
+            </span>
           </Link>
         </div>
         <ul className="flex flex-row items-center gap-20 text-white">

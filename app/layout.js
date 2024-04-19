@@ -33,11 +33,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className={inter.className}>
-        <div className="md:w-5/6 w-full mx-auto mb-0 ">
+        <div className="md:w-[90%] w-full mx-auto mb-0 ">
           <TopNavComponent />
         </div>
-        <main className="md:w-5/6 sm:w-full mx-auto mb-0">{children}</main>
-        <div className="md:w-5/6 w-full mx-auto mb-0 ">
+        <main className="md:w-[90%] sm:w-full mx-auto mb-0">{children}</main>
+        <div className="md:w-[90%] w-full mx-auto mb-0 ">
           <Footer />
         </div>
       </body>

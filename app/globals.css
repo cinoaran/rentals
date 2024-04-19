@@ -8,6 +8,10 @@
   }
 }
 
+body {
+  background: #ebecf4;
+}
+
 @keyframes moveLeftToRight {
   0% {
     transform: translateX(0);

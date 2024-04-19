@@ -6,7 +6,8 @@ import { MdOutlineMarkEmailRead } from "react-icons/md"
 const OwnerToClient = () => {
     return (
 
-        <div className="flex flex-col items-center justify-center border-[0.3px] border-blue-900 rounded-md p-5">
+        <div className="w-full lg:w-1/3 flex flex-col items-center justify-start border-[0.3px] border-blue-900 rounded-md p-5">
+            <h3 className="text-center text-white text-shadow-md text-3xl font-bold mb-8">Rent your property</h3>
             <div className="flex items-start justify-center  min-h-[100px]">
                 <div className="flex items-center justify-center gap-10 text-white w-full h-full p-5">
 

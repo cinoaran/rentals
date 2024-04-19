@@ -1,19 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import properties from "../../sample-data/properties.json";
 import { LuBath, LuBedSingle } from "react-icons/lu";
 import { MdOutlineDoorFront } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
-const Properties = () => {
+
+const AllProperties = ({ properties }) => {
     return (
+        <article className="w-full bg-blue-600/80 pb-10">
+            <h3 className="text-center text-shadow-md text-3xl mb-8 text-white pt-10">All Properties</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 place-items-center px-3 md:px-10">
 
-        <section className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-3 gap-4 place-items-center">
-
-            {properties.length === 0 ? <h2 className="text-center bg-slate-300 text-shadow-md  text-3xl font-bold mb-8">There are no properties to show!</h2> : ''}
-            {
-                properties.map((property) => (
-
-                    <div className="relative w-[100%] rounded-xl overflow-hidden shadow-lg bg-white" key={property._id}>
+                {properties.map((property) => (
+                    <div className="relative w-full md:w-[100%] rounded-xl overflow-hidden shadow-lg bg-white" key={property._id}>
                         <span
                             className="flex justify-center items-center gap-1 absolute top-[10px] right-[10px] bg-white p-2 rounded-lg text-blue-500 text-sm font-bold text-right md:text-center lg:text-right"
                         >
@@ -36,22 +34,22 @@ const Properties = () => {
                             <div className="flex items-center justify-center gap-4 text-gray-500 h-20">
                                 <p className="flex flex-col items-center justify-center gap-1 text-gray-900 p-2 ">
                                     <LuBedSingle size="30" />
-                                    <span className="text-sm text-bold"> x {property.beds}</span>
+                                    <span className="text-[13px] text-extra-bold"> x {property.beds}</span>
                                 </p>
                                 <p className="flex flex-col items-center justify-center gap-1 text-gray-900 p-2">
                                     <LuBath size="30" />
-                                    <span className="text-sm text-bold"> x {property.baths}</span>
+                                    <span className="text-[13px] text-extra-bold"> x {property.baths}</span>
                                 </p>
                                 <p className="flex flex-col items-center justify-center gap-1 text-gray-900 p-2">
                                     <MdOutlineDoorFront size="30" />
-                                    <span className="text-sm text-bold"> x {property.rooms}</span>
+                                    <span className="text-[13px] text-extra-bold"> x {property.rooms}</span>
                                 </p>
                             </div>
 
                             <div className="flex  items-center  justify-center gap-2 h-28">
-                                <p className="flex flex-col justify-center gap-1  text-gray-900 p-2 text-md"><span>Weekly</span> <span className="text-sm text-bold text-center">{property.rates.weekly > 0 ? `$ ${property.rates.weekly.toFixed(2)}` : '---'} </span></p>
-                                <p className="flex flex-col justify-center gap-1  text-gray-900 p-2 text-md"><span>Monthly</span><span className="text-sm text-bold text-center">{property.rates.monthly > 0 ? `$ ${property.rates.monthly.toFixed(2)}` : '---'} </span></p>
-                                <p className="flex flex-col justify-center gap-1  text-gray-900 p-2 text-md"><span>Nightly</span><span className="text-sm text-bold text-center">{property.rates.nightly > 0 ? `$ ${property.rates.nightly.toFixed(2)}` : '---'}</span></p>
+                                <p className="flex flex-col items-center justify-center gap-1  text-gray-900 p-2 text-[14px] text-semibold "><span>Weekly</span> <span className="text-[13px] text-semibold text-center">{property.rates.weekly > 0 ? `$ ${property.rates.weekly.toFixed(2)}` : '---'} </span></p>
+                                <p className="flex flex-col items-center justify-center gap-1  text-gray-900 p-2 text-[14px] text-semibold"><span>Monthly</span><span className="text-[13px] text-semibold text-center">{property.rates.monthly > 0 ? `$ ${property.rates.monthly.toFixed(2)}` : '---'} </span></p>
+                                <p className="flex flex-col items-center justify-center gap-1  text-gray-900 p-2 text-[14px] text-semibold"><span>Nightly</span><span className="text-[13px] text-semibold text-center">{property.rates.nightly > 0 ? `$ ${property.rates.nightly.toFixed(2)}` : '---'}</span></p>
                             </div>
 
                             <div className="border border-gray-100 mb-5"></div>
@@ -70,15 +68,11 @@ const Properties = () => {
                             </div>
                         </div>
                     </div>
-
-
-                ))
-
-            }
-
-        </section>
-
+                ))}
+            </div>
+        </article>
     )
+
 }
 
-export default Properties
+export default AllProperties

@@ -3,8 +3,8 @@ import React from 'react'
 
 const Reviews = () => {
     return (
-        <div className='flex flex-col items-center justify-center md:w-1/2 w-full  border-[0.3px] border-blue-900 rounded-md p-5'>
-            <h1 className="text-3xl font-semibold text-center text-white py-5">User Reviews</h1>
+        <div className='w-full lg:w-1/3 flex flex-col items-center justify-start border-[0.3px] border-blue-900 rounded-md p-5'>
+            <h3 className="text-center text-white text-shadow-md text-3xl font-bold mb-8">User Reviews</h3>
             <div className='w-full'>
                 <ul role="list" className="divide-y divide-gray-100">
                     <li className="flex justify-between gap-x-6 py-5">

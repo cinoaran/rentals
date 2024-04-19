@@ -24,7 +24,7 @@ const LoginTab = () => {
               message='Login or Register'
               position='center'
             >
-              <div className={`${pathname === '/login' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-2 hover:bg-gray-600 cursor-pointer`}>
+              <div className={`${pathname === '/login' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-1 md:p-2 hover:bg-gray-600 cursor-pointer`}>
                 <MdLogin size='19' />
               </div>
             </Tooltip>
@@ -36,7 +36,7 @@ const LoginTab = () => {
               message='All Properties'
               position='left'
             >
-              <div className={`${pathname === '/properties' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-2 hover:bg-gray-600 cursor-pointer`}>
+              <div className={`${pathname === '/properties' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-1 md:p-2 hover:bg-gray-600 cursor-pointer`}>
                 <FaRegBuilding size='18' />
               </div>
             </Tooltip>
@@ -47,7 +47,7 @@ const LoginTab = () => {
               message='Show Properties on Map'
               position='right'
             >
-              <div className={`${pathname === '/locations' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-2 hover:bg-gray-600 cursor-pointer`}>
+              <div className={`${pathname === '/locations' ? 'border-slate-100' : 'border-slate-400'} bg-blue-900 border-[0.3px] border-white rounded-full p-1 md:p-2 hover:bg-gray-600 cursor-pointer`}>
                 <MdOutlineLocationOn size='20' />
               </div>
             </Tooltip>
