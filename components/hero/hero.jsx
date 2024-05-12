@@ -3,7 +3,7 @@ import Benefits from '../benefits/benefits'
 
 const Hero = () => {
     return (
-        <div className="flex flex-col items-center justify-center bg-blue-900 h-[660px] md:h-[650px] pt-2 text-white z-index-10">
+        <div className="flex flex-col items-center justify-center bg-blue-900 h-[660px] md:h-[650px] pt-2 text-white z-index-10 ">
             <div className="relative flex flex-col items-center justify-center">
                 <h2 className="bg-none text-center md:text-5xl text-3xl text-white font-bold mb-10">Find The Perfect Rental</h2>
                 <span className="relative max-w-[400px] text-1xl text-center text-white font-normal mb-5">Discover the perfect property that suits your needs.</span>

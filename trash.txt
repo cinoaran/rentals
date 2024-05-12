@@ -1,21 +1,84 @@
-import properties from "../sample-data/properties.json";
-import FeaturedProperties from "./featuredProperties";
-import ListedProperties from "./listedProperties";
-import AllProperties from "./allProperties";
+import { FaBath, FaBed, FaRulerCombined } from "react-icons/fa";
+import { MdInfoOutline } from "react-icons/md";
 
-
-
-const Properties = () => {
-
+const Details = () => {
     return (
-        <section className="w-full bg-white">
-            {properties.length === 0 ? <h2 className="text-center bg-slate-300 text-shadow-md  text-3xl font-bold mb-8">There are no properties to show!</h2> : ''}
+        <div className="absolute flex flex-col items-center justify-center shadow-md w-[85%] md:w-1/2 rounded-lg bg-slate-200/40 p-5">
+            <div className="bg-white p-5 rounded-md ">
+                <h3 className="flex justify-start gap-5 my-2 text-lg font-bold border-b-[0.3px] border-gray-700  text-gray-500 p-2">
+                    <span><MdInfoOutline size="20" /></span> Description & Details
+                </h3>
+                <p className="text-gray-500 mb-4">
+                    This is a beautiful apartment located near the commons
+                </p>
+                <p className="text-gray-500 mb-4">
+                    We have a beautiful apartment located near the commons. It is a
+                    2 bedroom apartment with a full kitchen and bathroom. It is
+                    available for weekly or monthly rentals.
+                </p>
+                <h3 className="flex justify-start gap-5 my-2 text-lg font-bold border-b-[0.3px] border-gray-700  text-gray-500 p-2">
+                    <span><MdInfoOutline size="20" /></span> General Informations
+                </h3>
+                <div className="flex items-center justify-center gap-10 text-md my-2">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <AllProperties properties={properties} />
+                    <p className="flex flex-col items-center justify-between gap-2">
+                        <span className="flex items-center justify-center"><FaBed size="27" /></span> <span className="text-sm">x 3</span>
+                    </p>
+                    <p className="flex flex-col items-center justify-between gap-2">
+                        <span className="flex items-center justify-center"><FaBath size="22" /></span> <span className="text-sm">x 2</span>
+                    </p>
+                    <p className="flex flex-col items-center justify-between gap-2">
+                        <span className="flex items-center justify-center "><FaRulerCombined size="19" /></span> <span className="text-sm">225 sqft</span>
+                    </p>
+                </div>
+                <h3 className="flex items-center justify-start gap-5 text-lg font-bold  border-b-[0.3px] border-gray-700  text-gray-500 p-2">
+                    <span><MdInfoOutline size="20" /></span> Rates & Options
+                </h3>
+                <div className="flex flex-row items-center justify-center text-shadow-md gap-10 pt-5 pb-5">
+                    <div
+                        className="flex flex-col items-center justify-start pb-4 md:pb-0 font-bold"
+                    >
+                        <div className="text-sm">Nightly</div>
+                        <div className="text-sm ">
+                            -----
+                        </div>
+                    </div>
+                    <div
+                        className="flex flex-col items-center justify-start pb-4 md:pb-0 font-bold"
+                    >
+                        <div className="text-sm">Weekly</div>
+                        <div className="text-sm">$1,100</div>
+                    </div>
+                    <div className="flex flex-col items-center justify-start pb-4 md:pb-0 font-bold">
+                        <div className="text-sm">Monthly</div>
+                        <div className="text-sm">$4,200</div>
+                    </div>
+
+                </div>
             </div>
-        </section>
+        </div>
     )
 }
 
-export default Properties
+
+                        {/* 
+                        <div className="w-full text-white text-sm ">
+                            <h3 className="flex justify-start gap-5 my-2 text-lg font-bold border-b-[0.3px] border-blue-700  text-white">
+                                <span><MdInfoOutline size="20" /></span> Description & Details
+                            </h3>
+                            <p >
+                                This is a beautiful apartment located near the commons
+                            </p>
+                            <p>
+                                We have a beautiful apartment located near the commons. It is a
+                                2 bedroom apartment with a full kitchen and bathroom. It is
+                                available for weekly or monthly rentals.
+                            </p>
+                        </div>*/}
+
+
+
+
+                        
+
+export default Details
