@@ -6,8 +6,8 @@ import { MdInfoOutline } from "react-icons/md";
 const Amenities = ({ amenities }) => {
   return (
 
-    <div className="w-full text-white text-sm">
-      <h3 className="flex items-center justify-start gap-3 text-lg border-b-[0.3px] border-gray-700  text-white py-2 px-2">
+    <div className="w-full text-white text-sm md:text-md lg:text-lg">
+      <h3 className="flex items-center justify-start gap-3 border-b-[0.3px] border-gray-700  text-white py-2 px-2">
         <span><MdInfoOutline size="20" /></span> Amenities
       </h3>
       <ul

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Map = () => {
     return (
         <div className="w-full h-[800px] bg-white rounded-md">

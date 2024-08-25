@@ -26,9 +26,9 @@ const TopNavComponent = () => {
       <nav className="flex flex-row items-center justify-between p-5 w-full ">
         <div className="relative text-white cursor-pointer">
           <Link href="/" className="flex flex-col items-center justify-center">
-            <IoBedOutline className="text-blue-900 text-5xl md:text-8xl " />
-            <span className="text-sm font-bold uppercase">
-              Travel <b className="text-blue-900">&</b> Living
+            <IoBedOutline className="text-blue-900 text-8xl " />
+            <span className="text-lg font-bold uppercase">
+              Travel <b className="text-white">&</b> Living
             </span>
           </Link>
         </div>

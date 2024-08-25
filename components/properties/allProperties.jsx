@@ -6,8 +6,8 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const AllProperties = ({ properties }) => {
     return (
-        <article className="w-full bg-blue-600/60 pb-10">
-            <h3 className="text-center text-shadow-md text-3xl mb-8 text-white pt-10">All Properties</h3>
+        <article className="w-full bg-white pb-10">
+            <h3 className="text-center text-shadow-md text-3xl mb-8 text-gray-700 pt-10">All Properties</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 place-items-center px-3 md:px-10">
 
                 {properties.map((property) => (
@@ -15,9 +15,8 @@ const AllProperties = ({ properties }) => {
                         <p
                             className="flex justify-center items-center gap-1 absolute top-[0px] right-[0px] bg-slate-200/40 p-1 rounded-bl-lg "
                         >
-                            <span className="bg-blue-800 text-white p-2 rounded-bl-md rounded-tr-md text-sm">{property.square_feet} sqm</span>
+                            <span className="bg-blue-800 text-white p-2 rounded-bl-md rounded-tr-lg text-sm">{property.square_feet} sqm</span>
                         </p>
-
                         <Image
                             src={`/properties/${property.images[0]}`}
                             width={0}

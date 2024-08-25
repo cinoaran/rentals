@@ -3,7 +3,7 @@ import React from 'react'
 
 const Reviews = () => {
     return (
-        <div className='w-full lg:w-1/3 flex flex-col items-center justify-start bg-slate-200/40 border-[0.3px] border-blue-900 rounded-md p-5'>
+        <div className='w-full lg:w-1/3 flex flex-col items-center justify-start border-[0.3px] border-gray-100 rounded-md p-5'>
             <div className='bg-blue-600/60 p-5 rounded-md w-full'>
                 <h3 className="text-center text-white text-shadow-md text-3xl font-bold mb-8">User Reviews</h3>
                 <div className='w-full'>
